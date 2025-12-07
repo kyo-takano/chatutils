@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chatutils"
+version = "0.1.0"
+description = "Utility methods to manipulate LLM inputs and outputs"
+dependencies = [
+    "rich"
+]
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+keywords = ["LLM", "code", "agent", "io"]
+authors = [{ name = "Kyo Takano" }]
+
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Operating System :: OS Independent",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3 :: Only",
+]
+
+[project.urls]
+"Source" = "https://github.com/kyo-takano/chatutils"
+
+[tool.ruff]
+ignore = ["F401", "F403", "F405"]
+
